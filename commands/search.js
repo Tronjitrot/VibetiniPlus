@@ -16,20 +16,26 @@ module.exports = {
         if(!args[0] && !custom){
             return message.channel.send("£search (thing)")
         }
-
         const images = await google.image(input, {
             safe: false
         })
         //console.log(images[Math.floor(Math.random() * 100)].url)
-        var image = images[Math.floor(Math.random() * 100)].url
+        var number = Math.floor(Math.random() * 100)
+        var image = images[number].url
+        var link = images[number].origin.website.url
         while (true){
-            if(image.endsWith(".png") || image.endsWith(".jpg")){break;}
-            else image = images[Math.floor(Math.random() * 100)].url
+            if(image.endsWith(".png") || image.endsWith(".jpg") || image.endsWith(".webp")){break;}
+            else {
+                number = Math.floor(Math.random() * 100)
+                image = images[number].url
+                link = images[number].origin.website.url
+            }
         }
         console.log(image)
 
         const embed = new EmbedBuilder()
         .setTitle(title)
+        .setURL(link)
         .setColor('#5cfa58')
         //.setThumbnail(client.user.displayAvatarURL())
         .setImage(image)
