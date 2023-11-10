@@ -12,6 +12,7 @@ module.exports = {
         if (command == "£shadow")
         {input = "shadow the hedgehog", custom = true, title = "Shadow The Edgehog"}
 
+        
         if(!args[0] && !custom){
             return message.channel.send("£search (thing)")
         }
@@ -20,12 +21,18 @@ module.exports = {
             safe: false
         })
         //console.log(images[Math.floor(Math.random() * 100)].url)
+        var image = images[Math.floor(Math.random() * 100)].url
+        while (true){
+            if(image.endsWith(".png") || image.endsWith(".jpg")){break;}
+            else image = images[Math.floor(Math.random() * 100)].url
+        }
+        console.log(image)
 
         const embed = new EmbedBuilder()
         .setTitle(title)
         .setColor('#5cfa58')
         //.setThumbnail(client.user.displayAvatarURL())
-        .setImage(images[Math.floor(Math.random() * 100)].url)
+        .setImage(image)
         .setFooter({
             iconURL: client.user.displayAvatarURL(),
             text: 'Stan Silver The Hedgehog or get cancelled'
