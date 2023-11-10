@@ -3,7 +3,7 @@ const { EmbedBuilder } = require('discord.js')
 s0  = "https://youtu.be/6yisws5rKoo" //yoda
 s1  = "https://youtu.be/4DxBkW3r8pA" //changedaworld
 s2  = "https://www.youtube.com/watch?v=W5g33W0Zafs" //64 bits
-s3  = "https://youtu.be/xo6mn_0-_gY" //wario
+s3  = "https://youtu.be/4htVcaTo1z4" //CHANGE
 s4  = "https://youtu.be/4htVcaTo1z4" //chunky
 s5  = "https://youtu.be/r18jYoPGtvU" //macaroni
 s6  = "https://youtu.be/JS2vGvm_OVA" //ducks
@@ -58,7 +58,7 @@ s54 = "https://www.youtube.com/watch?v=aw4HeTuEoxc" //cashbanooca
 s55 = "https://www.youtube.com/watch?v=ZBkCOA8WSmc" //cheese
 s56 = "https://youtu.be/9JJijrn4Z9U" //what
 s57 = "https://youtu.be/rcnHwzyDx48" //noboobs
-s58 = "https://www.youtube.com/watch?v=hvBzqttuLKY" //cock
+s58 = "https://youtu.be/xeC8u5dbOlw" //CHANGETHISONE
 s59 = "https://youtu.be/xeC8u5dbOlw" //onthenintendo3ds
 s60 = "https://www.youtube.com/watch?v=SSyIz3uo2P8" //foryou
 s61 = "https://www.youtube.com/watch?v=j-K-zqLNtcw" //STEEVEN

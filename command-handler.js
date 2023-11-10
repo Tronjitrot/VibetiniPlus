@@ -48,7 +48,15 @@ module.exports = async (client) => {
     client.on('messageCreate', (message) => {
 
         if (!message.author.bot && message.content.toLowerCase().includes("joe")) {
-            message.channel.send("Joe Mama.")
+            //message.channel.send("Joe Mama.")
+            message.react('<a:letterj:1172555936381030521>')
+			.then(() => message.react('<a:lettero:1172555962645745724>'))
+			.then(() => message.react('<a:lettere:1172555971751583916>'))
+            .then(() => message.react('<:vibesus:979177529917177896>'))
+            .then(() => message.react('<a:letterm:1172555978382770217>'))
+            .then(() => message.react('<a:lettera:1172555984191885343>'))
+            .then(() => message.react('<a:letterm2:1172555991431270491>'))
+            .then(() => message.react('<a:lettera2:1172555997169070172>'))
         }
 
         if (message.author.bot || !message.content.startsWith(process.env.prefix)) {
