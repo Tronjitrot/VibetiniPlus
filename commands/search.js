@@ -3,7 +3,7 @@ const google = require('googlethis')
 
 module.exports = {
     callback: async (message, args, client) => {
-        const command = message.content.split(" ")[0]
+        const command = message.content.split(" ")[0].toLowerCase()
         var input = args.join(" ")
         var title = input
         var custom = false
@@ -52,9 +52,14 @@ module.exports = {
             },
         ])*/
 
-        message.channel.send({
+        sent = await message.channel.send({
             embeds: [embed]
         })
+        if (command == "£silver")
+        {sent.react('<SliverHodge:928349338466394132>')}
+        if (command == "£shadow")
+        {sent.react('<shadowgun:947248954301632562>')}
+
 
     }
 }

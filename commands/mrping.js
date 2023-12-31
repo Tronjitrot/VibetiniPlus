@@ -8,7 +8,7 @@ module.exports = {
             ping = message.author.toString()
         }
         else {
-            input = args.join(" ")
+            input = args.join(" ").toLowerCase()
             if(input === "everyone" || input === "@everyone"){
                 ping = "@everyone"
             } else {

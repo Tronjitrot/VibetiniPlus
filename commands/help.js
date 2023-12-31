@@ -29,8 +29,18 @@ module.exports = {
                 inline: false
             },
             {
-                name: '£mrping',
+                name: '£mrping (user)',
                 value: `funni`,
+                inline: false
+            },
+            {
+                name: '£search (prompt) / £silver / £shadow',
+                value: `Ok Google, Show me funny monkey`,
+                inline: false
+            },
+            {
+                name: '£mimic (prompt)',
+                value: `just like from`,
                 inline: false
             },
         ])
