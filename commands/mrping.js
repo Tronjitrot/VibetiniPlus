@@ -16,7 +16,7 @@ module.exports = {
                 members.every(r => {
                     const name = r.user.username
                     const nick = r.nickname
-                    console.log("name: " + name + " | nick: " + nick)
+                    //console.log("name: " + name + " | nick: " + nick)
                     if((nick != null && nick.toLowerCase().includes(input))
                     || (name.toLowerCase().includes(input))){
                         ping = r.user.toString() 
